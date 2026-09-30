@@ -1,0 +1,6 @@
+@IAMProvider.API_HostAddress = http://localhost:5177
+
+GET {{IAMProvider.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
