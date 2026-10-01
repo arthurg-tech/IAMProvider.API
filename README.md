@@ -4,6 +4,14 @@ Uma API RESTful de alta performance desenvolvida em ASP.NET Core, estruturada pa
 
 ---
 
+- **Linguagem:** C# (.NET Core)
+- **Framework:** ASP.NET Core Web API
+- **Segurança & Autenticação:** ASP.NET Core Identity & Microsoft.AspNetCore.Authentication.JwtBearer
+- **Persistência:** Entity Framework Core (ORM) com SQLite
+- **Documentação de API:** Swashbuckle.AspNetCore (OpenAPI)
+
+---
+
 ## Principais Funcionalidades de Segurança
 
 - **Gestão de Identidades (Identity Core):** Cadastro seguro de usuários com hash robusto de senhas e aplicação de políticas de complexidade.
@@ -11,16 +19,6 @@ Uma API RESTful de alta performance desenvolvida em ASP.NET Core, estruturada pa
 - **Controle de Acesso Granular (RBAC):** Mecanismo dinâmico de criação de *roles* (ex: `Admin`, `User`) e associação de privilégios aos perfis de usuários.
 - **Proteção de Endpoints:** Segregação rígida de recursos baseada em autorização por escopos e funções, retornando códigos de erro padronizados (`401 Unauthorized` e `403 Forbidden`).
 - **Documentação OpenAPI Moderna:** Configuração avançada do Swagger integrada ao esquema de segurança HTTP Bearer para testes interativos de tokens.
-
----
-
-## Tecnologias e Arquitetura
-
-- **Linguagem:** C# (.NET Core)
-- **Framework:** ASP.NET Core Web API
-- **Segurança & Autenticação:** ASP.NET Core Identity & Microsoft.AspNetCore.Authentication.JwtBearer
-- **Persistência:** Entity Framework Core (ORM) com SQLite
-- **Documentação de API:** Swashbuckle.AspNetCore (OpenAPI)
 
 ---
 
