@@ -2,8 +2,6 @@
 
 Uma API RESTful de alta performance desenvolvida em ASP.NET Core, estruturada para atuar como um provedor centralizado de **Gestão de Identidade e Acessos (IAM)**. O projeto foi concebido como parte de um portfólio de engenharia de segurança e desenvolvimento backend, demonstrando a implementação prática de autenticação *stateless*, criptografia de credenciais e **Controle de Acesso Baseado em Funções (RBAC)**.
 
----
-
 ## Tecnologias e Arquitetura
 
 - **Linguagem:** C# (.NET Core)
@@ -12,8 +10,6 @@ Uma API RESTful de alta performance desenvolvida em ASP.NET Core, estruturada pa
 - **Persistência:** Entity Framework Core (ORM) com SQLite
 - **Documentação de API:** Swashbuckle.AspNetCore (OpenAPI)
 
----
-
 ## Principais Funcionalidades de Segurança
 
 - **Gestão de Identidades (Identity Core):** Cadastro seguro de usuários com hash robusto de senhas e aplicação de políticas de complexidade.
@@ -21,8 +17,6 @@ Uma API RESTful de alta performance desenvolvida em ASP.NET Core, estruturada pa
 - **Controle de Acesso Granular (RBAC):** Mecanismo dinâmico de criação de *roles* (ex: `Admin`, `User`) e associação de privilégios aos perfis de usuários.
 - **Proteção de Endpoints:** Segregação rígida de recursos baseada em autorização por escopos e funções, retornando códigos de erro padronizados (`401 Unauthorized` e `403 Forbidden`).
 - **Documentação OpenAPI Moderna:** Configuração avançada do Swagger integrada ao esquema de segurança HTTP Bearer para testes interativos de tokens.
-
----
 
 ## Como Executar o Projeto
 
