@@ -29,13 +29,6 @@ Uma API RESTful de alta performance desenvolvida em ASP.NET Core, estruturada pa
 | `GET` | `/api/ProtectedResource/dados-usuario` | Retorna dados restritos a usuários autenticados. | **Sim** | `User` ou `Admin` |
 | `GET` | `/api/ProtectedResource/dados-admin` | Retorna dados confidenciais de administração. | **Sim** | Somente `Admin` |
 
-## Roadmap e Passos Futuros
-* **Implementação de Refresh Tokens:** Adição de mecanismo de renovação de tokens de acesso de curta duração, aumentando a segurança da sessão sem fricção para o usuário.
-* **Autenticação Multifator (MFA / TOTP):** Integração de códigos de verificação em duas etapas via aplicativos autenticadores (Google Authenticator / Authy).
-* **Mecanismo de Account Lockout:** Bloqueio temporário de contas após múltiplas tentativas consecutivas de falha de login, mitigando ataques de força bruta.
-* **Trilha de Auditoria (Audit Logging):** Sistema estruturado de logs para rastreabilidade de eventos críticos de segurança (tentativas de intrusão, alterações de privilégios e logins bem-sucedidos).
-* **Migração de Banco de Dados de Produção:** Transição arquitetural do SQLite para o PostgreSQL, preparando a aplicação para ambientes concorrentes de alta escalabilidade.
-
 
 ## Como Executar o Projeto
 
@@ -63,3 +56,10 @@ Certifique-se de ter instalado na sua máquina:
    dotnet run
 
 7. Acesse a interface interativa do Swagger no navegador através do endereço gerado no terminal (geralmente `https://localhost:<porta>/swagger`).
+
+## Roadmap e Passos Futuros
+* **Implementação de Refresh Tokens:** Adição de mecanismo de renovação de tokens de acesso de curta duração, aumentando a segurança da sessão sem fricção para o usuário.
+* **Autenticação Multifator (MFA / TOTP):** Integração de códigos de verificação em duas etapas via aplicativos autenticadores (Google Authenticator / Authy).
+* **Mecanismo de Account Lockout:** Bloqueio temporário de contas após múltiplas tentativas consecutivas de falha de login, mitigando ataques de força bruta.
+* **Trilha de Auditoria (Audit Logging):** Sistema estruturado de logs para rastreabilidade de eventos críticos de segurança (tentativas de intrusão, alterações de privilégios e logins bem-sucedidos).
+* **Migração de Banco de Dados de Produção:** Transição arquitetural do SQLite para o PostgreSQL, preparando a aplicação para ambientes concorrentes de alta escalabilidade.
