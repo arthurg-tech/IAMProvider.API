@@ -37,3 +37,13 @@ Certifique-se de ter instalado na sua máquina:
    ```bash
    git clone https://github.com/seu-usuario/IamProvider.API.git
    cd IamProvider.API
+
+2. Restaure as dependênicas do projeto
+   ```bash
+   dotnet restore
+
+3. Inicie a execução da aplicação
+   ```bash
+   dotnet restore
+
+4. Acesse a interface interativa do Swagger no navegador através do endereço gerado no terminal (geralmente `https://localhost:<porta>/swagger`).
