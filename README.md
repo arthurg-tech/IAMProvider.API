@@ -4,6 +4,8 @@ Uma API RESTful de alta performance desenvolvida em ASP.NET Core, estruturada pa
 
 ---
 
+## Tecnologias e Arquitetura
+
 - **Linguagem:** C# (.NET Core)
 - **Framework:** ASP.NET Core Web API
 - **Segurança & Autenticação:** ASP.NET Core Identity & Microsoft.AspNetCore.Authentication.JwtBearer
