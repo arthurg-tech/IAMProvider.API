@@ -44,6 +44,6 @@ Certifique-se de ter instalado na sua máquina:
 
 3. Inicie a execução da aplicação
    ```bash
-   dotnet restore
+   dotnet run
 
 4. Acesse a interface interativa do Swagger no navegador através do endereço gerado no terminal (geralmente `https://localhost:<porta>/swagger`).
