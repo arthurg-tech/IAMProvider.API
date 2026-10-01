@@ -31,18 +31,24 @@ Certifique-se de ter instalado na sua máquina:
    ```bash
    git clone https://github.com/seu-usuario/IamProvider.API.git
    cd IamProvider.API
-
-3. Restaure as dependênicas do projeto
+   
+2. Restaure as dependênicas do projeto
    
    ```bash
    dotnet restore
 
-5. Inicie a execução da aplicação
+3. Aplique as migrações para gerar o banco de dados SQLite local
+   
+    ```bash
+    dotnet ef database update
+
+4. Inicie a execução da aplicação
    
    ```bash
    dotnet run
 
-7. Acesse a interface interativa do Swagger no navegador através do endereço gerado no terminal (geralmente `https://localhost:<porta>/swagger`).
+5. Acesse a interface interativa do Swagger no navegador através do endereço gerado no terminal (geralmente `https://localhost:<porta>/swagger`).
+   
 
 ## Mapeamento de Endpoints
 | Método | Rota | Descrição | Requer Autenticação? | Restrição de Role |
