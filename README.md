@@ -18,6 +18,15 @@ Uma API RESTful de alta performance desenvolvida em ASP.NET Core, estruturada pa
 - **Proteção de Endpoints:** Segregação rígida de recursos baseada em autorização por escopos e funções, retornando códigos de erro padronizados (`401 Unauthorized` e `403 Forbidden`).
 - **Documentação OpenAPI Moderna:** Configuração avançada do Swagger integrada ao esquema de segurança HTTP Bearer para testes interativos de tokens.
 
+
+## Roadmap e Passos Futuros
+* **Implementação de Refresh Tokens:** Adição de mecanismo de renovação de tokens de acesso de curta duração, aumentando a segurança da sessão sem fricção para o usuário.
+* **Autenticação Multifator (MFA / TOTP):** Integração de códigos de verificação em duas etapas via aplicativos autenticadores (Google Authenticator / Authy).
+* **Mecanismo de Account Lockout:** Bloqueio temporário de contas após múltiplas tentativas consecutivas de falha de login, mitigando ataques de força bruta.
+* **Trilha de Auditoria (Audit Logging):** Sistema estruturado de logs para rastreabilidade de eventos críticos de segurança (tentativas de intrusão, alterações de privilégios e logins bem-sucedidos).
+* **Migração de Banco de Dados de Produção:* Transição arquitetural do SQLite para o PostgreSQL, preparando a aplicação para ambientes concorrentes de alta escalabilidade.
+
+
 ## Como Executar o Projeto
 
 ### Pré-requisitos
