@@ -35,5 +35,5 @@ Certifique-se de ter instalado na sua máquina:
 
 1. Clone o repositório:
    ```bash
-   git clone [https://github.com/seu-usuario/IamProvider.API.git](https://github.com/seu-usuario/IamProvider.API.git)
+   git clone https://github.com/seu-usuario/IamProvider.API.git
    cd IamProvider.API
