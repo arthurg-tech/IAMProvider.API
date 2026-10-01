@@ -18,20 +18,7 @@ Uma API RESTful de alta performance desenvolvida em ASP.NET Core, estruturada pa
 - **Proteção de Endpoints:** Segregação rígida de recursos baseada em autorização por escopos e funções, retornando códigos de erro padronizados (`401 Unauthorized` e `403 Forbidden`).
 - **Documentação OpenAPI Moderna:** Configuração avançada do Swagger integrada ao esquema de segurança HTTP Bearer para testes interativos de tokens.
 
-## Mapeamento de Endpoints
-| Método | Rota | Descrição | Requer Autenticação? | Restrição de Role |
-|---|---|---|:---:|:---:|
-| `POST` | `/api/Auth/register` | Cria uma nova conta de usuário no provedor. | Não | Livre |
-| `POST` | `/api/Auth/login` | Valida credenciais e emite o Token JWT de acesso. | Não | Livre |
-| `POST` | `/api/Auth/create-role` | Cria uma nova regra/permissão no sistema. | Não | Livre |
-| `POST` | `/api/Auth/assign-role` | Associa uma *role* a um usuário cadastrado. | Não | Livre |
-| `GET` | `/api/ProtectedResource/dados-publicos` | Endpoint aberto para testes de conectividade. | Não | Livre |
-| `GET` | `/api/ProtectedResource/dados-usuario` | Retorna dados restritos a usuários autenticados. | **Sim** | `User` ou `Admin` |
-| `GET` | `/api/ProtectedResource/dados-admin` | Retorna dados confidenciais de administração. | **Sim** | Somente `Admin` |
-
-
 ## Como Executar o Projeto
-
 ### Pré-requisitos
 Certifique-se de ter instalado na sua máquina:
 - [.NET SDK](https://dotnet.microsoft.com/download)
@@ -56,6 +43,18 @@ Certifique-se de ter instalado na sua máquina:
    dotnet run
 
 7. Acesse a interface interativa do Swagger no navegador através do endereço gerado no terminal (geralmente `https://localhost:<porta>/swagger`).
+
+## Mapeamento de Endpoints
+| Método | Rota | Descrição | Requer Autenticação? | Restrição de Role |
+|---|---|---|:---:|:---:|
+| `POST` | `/api/Auth/register` | Cria uma nova conta de usuário no provedor. | Não | Livre |
+| `POST` | `/api/Auth/login` | Valida credenciais e emite o Token JWT de acesso. | Não | Livre |
+| `POST` | `/api/Auth/create-role` | Cria uma nova regra/permissão no sistema. | Não | Livre |
+| `POST` | `/api/Auth/assign-role` | Associa uma *role* a um usuário cadastrado. | Não | Livre |
+| `GET` | `/api/ProtectedResource/dados-publicos` | Endpoint aberto para testes de conectividade. | Não | Livre |
+| `GET` | `/api/ProtectedResource/dados-usuario` | Retorna dados restritos a usuários autenticados. | **Sim** | `User` ou `Admin` |
+| `GET` | `/api/ProtectedResource/dados-admin` | Retorna dados confidenciais de administração. | **Sim** | Somente `Admin` |
+
 
 ## Roadmap e Passos Futuros
 * **Implementação de Refresh Tokens:** Adição de mecanismo de renovação de tokens de acesso de curta duração, aumentando a segurança da sessão sem fricção para o usuário.
