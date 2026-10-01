@@ -24,7 +24,7 @@ Uma API RESTful de alta performance desenvolvida em ASP.NET Core, estruturada pa
 
 ---
 
-## 🚀 Como Executar o Projeto
+## Como Executar o Projeto
 
 ### Pré-requisitos
 Certifique-se de ter instalado na sua máquina:
@@ -38,7 +38,7 @@ Certifique-se de ter instalado na sua máquina:
    git clone [https://github.com/seu-usuario/IamProvider.API.git](https://github.com/seu-usuario/IamProvider.API.git)
    cd IamProvider.API
 
-## 📡 Mapeamento de Endpoints
+## Mapeamento de Endpoints
 
 | Método | Rota | Descrição | Requer Autenticação? | Restrição de Role |
 |---|---|---|:---:|:---:|
@@ -51,10 +51,10 @@ Certifique-se de ter instalado na sua máquina:
 | `GET` | `/api/ProtectedResource/dados-admin` | Retorna dados confidenciais de administração. | **Sim** | Somente `Admin` |
 
 
-## 🗺️ Roadmap e Próximos Passos (Evolução do Projeto)
+## 🛣️ Roadmap e Próximos Passos (Evolução do Projeto)
 
-- [ ] Implementação de Refresh Tokens: Adição de mecanismo de renovação de tokens de acesso de curta duração, aumentando a segurança da sessão sem fricção para o usuário.
-- [ ] Autenticação Multifator (MFA / TOTP): Integração de códigos de verificação em duas etapas via aplicativos autenticadores (Google Authenticator / Authy).
-- [ ] Mecanismo de Account Lockout: Bloqueio temporário de contas após múltiplas tentativas consecutivas de falha de login, mitigando ataques de força bruta.
-- [ ] Trilha de Auditoria (Audit Logging): Sistema estruturado de logs para rastreabilidade de eventos críticos de segurança (tentativas de intrusão, alterações de privilégios e logins bem-sucedidos).
-- [ ] Migração de Banco de Dados de Produção: Transição arquitetural do SQLite para o PostgreSQL, preparando a aplicação para ambientes concorrentes de alta escalabilidade.
+* **Implementação de Refresh Tokens:** Adição de mecanismo de renovação de tokens de acesso de curta duração, aumentando a segurança da sessão sem fricção para o usuário.
+* **Autenticação Multifator (MFA / TOTP):** Integração de códigos de verificação em duas etapas via aplicativos autenticadores (Google Authenticator / Authy).
+* **Mecanismo de Account Lockout:** Bloqueio temporário de contas após múltiplas tentativas consecutivas de falha de login, mitigando ataques de força bruta.
+* **Trilha de Auditoria (Audit Logging):** Sistema estruturado de logs para rastreabilidade de eventos críticos de segurança (tentativas de intrusão, alterações de privilégios e logins bem-sucedidos).
+* **Migração de Banco de Dados de Produção:** Transição arquitetural do SQLite para o PostgreSQL, preparando a aplicação para ambientes concorrentes de alta escalabilidade.
