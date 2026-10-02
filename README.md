@@ -16,7 +16,7 @@ Uma API RESTful desenvolvida em ASP.NET Core, estruturada para atuar como um pro
 - **Autenticação Baseada em Tokens (JWT):** Emissão de JSON Web Tokens assinados digitalmente, garantindo a integridade e a autenticidade das sessões.
 - **Controle de Acesso Granular (RBAC):** Mecanismo dinâmico de criação de *roles* (ex: `Admin`, `User`) e associação de privilégios aos perfis de usuários.
 - **Proteção de Endpoints:** Segregação rígida de recursos baseada em autorização por escopos e funções, retornando códigos de erro padronizados (`401 Unauthorized` e `403 Forbidden`).
-- **Documentação OpenAPI Moderna:** Configuração avançada do Swagger integrada ao esquema de segurança HTTP Bearer para testes interativos de tokens.
+- **Documentação OpenAPI:** Configuração avançada do Swagger integrada ao esquema de segurança HTTP Bearer para testes interativos de tokens.
 
 ## Como Executar o Projeto
 ### Pré-requisitos
