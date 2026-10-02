@@ -1,6 +1,6 @@
 # 🛡️🫆🪪 Identity and Access Management (IAM) Provider API
 
-Uma API RESTful de alta performance desenvolvida em ASP.NET Core, estruturada para atuar como um provedor centralizado de **Gestão de Identidade e Acessos (IAM)**. O projeto foi concebido como parte de um portfólio de engenharia de segurança e desenvolvimento backend, demonstrando a implementação prática de autenticação *stateless*, criptografia de credenciais e **Controle de Acesso Baseado em Funções (RBAC)**.
+Uma API RESTful desenvolvida em ASP.NET Core, estruturada para atuar como um provedor centralizado de **Gestão de Identidade e Acessos (IAM)**. O projeto foi concebido como parte de um portfólio de engenharia de segurança e desenvolvimento backend, demonstrando a implementação prática de autenticação *stateless*, criptografia de credenciais e **Controle de Acesso Baseado em Funções (RBAC)**.
 
 ## Tecnologias e Arquitetura
 
